@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Young+Serif&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-image: url("pexels-eberhardgross-691668-_2_.avif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: white;
+  text-shadow: 0 0 2px black;
+  font-size: 17px;
+}
+
+header {
+  width: 45rem;
+  background-color: rgba(73, 73, 73, 0.67);
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header span {
+  font-size: 1.5em;
+}
+header #dataBtn {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+header #dataBtn:hover {
+  color: rgb(216, 216, 216);
+  cursor: pointer;
+}
+header input {
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+header button {
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: bold;
+}
+header button:hover {
+  background-color: rgb(196, 196, 196);
+  cursor: pointer;
+}
+header #errorBox {
+  position: absolute;
+  color: rgb(221, 65, 65);
+  font-weight: bold;
+}
+
+main {
+  width: 45rem;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  background-color: rgba(73, 73, 73, 0.67);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.mainpanel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.mainpanel .today {
+  font-size: 1.4em;
+}
+.mainpanel .tomorrow {
+  font-size: 1.3em;
+}
+.mainpanel #emojiCurentWeather {
+  font-size: 2em;
+}
+.mainpanel p {
+  margin-bottom: 0.3rem;
+}
+
+.weekpanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.weekpanel .next7days {
+  display: flex;
+  justify-content: space-between;
+}
+.weekpanel .next7days div {
+  background-color: rgba(68, 68, 68, 0.67);
+  padding: 0.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}/*# sourceMappingURL=styles.css.map */
